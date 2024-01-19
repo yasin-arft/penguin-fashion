@@ -15,21 +15,24 @@
     .font-primary {
       font-family: 'Bebas Neue', sans-serif;
     }
+    body {
+      color: #363958;
+    }
     .font-secondary {
       font-family: 'Roboto', sans-serif;
     }
   </style>
 </head>
 
-<body>
+<body class="font-secondry">
   <!-- header start -->
   <header class=" bg-[#FFFBF0]">
 
     <!-- banner section start -->
     <section>
-      <div class="container mx-auto px-4 flex gap-x-40 items-center">
-        <div class="space-y-2">
-          <h1 class="text-7xl text-[#363958]">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row gap-y-11 md:gap-x-40 items-center">
+        <div class="md:space-y-2">
+          <h1 class="text-6xl md:text-7xl font-primary">
             <span class="text-[#FABE4C]">Be the Penguins</span>
             <br>
             of Winter
@@ -54,7 +57,9 @@
             Buy now
           </button>
         </div>
-        <img src="./images/model.png" alt="" class="mr-12">
+        <div  class="max-w-80 md:max-w-lg md:mr-12">
+        <img src="./images/model.png" alt="">
+        </div>
       </div>
     </section>
     <!-- banner section end -->
